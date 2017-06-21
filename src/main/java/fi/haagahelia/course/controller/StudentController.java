@@ -23,6 +23,10 @@ public class StudentController {
 
 	@Autowired
     private CourseRepository crepository; 	
+	@RequestMapping("/")
+	public String start(){
+		return "redirect:/students";
+	}
 	
 	@RequestMapping("/login")
 	public String login() {
